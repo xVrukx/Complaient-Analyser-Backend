@@ -6,7 +6,7 @@ from AiAgent import initialize_database
 
 app = Flask(__name__)
 app.register_blueprint(route)
-CORS(app, origins=["http://localhost:5173"])
+CORS(app, origins=["https://complaient-analyser.onrender.com"])
 initialize_database()
 
 
