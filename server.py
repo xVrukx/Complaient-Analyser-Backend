@@ -1,13 +1,18 @@
 from flask import Flask
 from flask_cors import CORS
-from route import route
-from AiAgent import initialize_database
 
+from route import route
 
 app = Flask(__name__)
+
+CORS(
+    app,
+    origins=["https://complaient-analyser.onrender.com"],
+    methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"]
+)
+
 app.register_blueprint(route)
-CORS(app, origins=["https://complaient-analyser.onrender.com/"])
-initialize_database()
 
 
 if __name__ == "__main__":
