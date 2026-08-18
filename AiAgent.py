@@ -229,7 +229,7 @@ def Route1(state: State):
 def AddComplaient(state: State):
 
     completion = Model.chat.completions.create(
-        model="meta-llama/llama-prompt-guard-2-22m",
+        model="llama-3.3-70b-versatile",
 
         messages=[
             {
@@ -300,7 +300,7 @@ def UpdateComplaient(state: State):
     previous_data = state["refined_data"]
 
     completion = Model.chat.completions.create(
-        model="meta-llama/llama-prompt-guard-2-22m",
+                model="llama-3.3-70b-versatile",
 
         messages=[
             {
