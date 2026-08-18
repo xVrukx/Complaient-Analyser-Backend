@@ -300,7 +300,7 @@ def UpdateComplaient(state: State):
     previous_data = state["refined_data"]
 
     completion = Model.chat.completions.create(
-                model="grok/compound",
+                model="groq/compound",
 
         messages=[
             {
