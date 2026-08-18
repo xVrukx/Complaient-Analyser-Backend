@@ -300,7 +300,7 @@ def UpdateComplaient(state: State):
     previous_data = state["refined_data"]
 
     completion = Model.chat.completions.create(
-                model="llama-3.3-70b-versatile",
+                model="grok/compound",
 
         messages=[
             {
