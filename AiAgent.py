@@ -229,7 +229,7 @@ def Route1(state: State):
 def AddComplaient(state: State):
 
     completion = Model.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="groq/compound",
 
         messages=[
             {
